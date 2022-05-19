@@ -5323,11 +5323,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\BookService\\BookService\\BookService.csproj",
+      "projectUniqueName": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\BookService\\BookService\\BookService.csproj",
       "projectName": "BookService",
-      "projectPath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\BookService\\BookService\\BookService.csproj",
+      "projectPath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\BookService\\BookService\\BookService.csproj",
       "packagesPath": "C:\\Users\\ivona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\BookService\\BookService\\obj\\",
+      "outputPath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\BookService\\BookService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

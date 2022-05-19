@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q9ayOAI5OCzoM0aPr0/N6u62Pnrs74N/5feQlgTN9gaVcKZ4ipwHmQAk4lhdKDdpax1pLZH4sI6hHjqvHzFqJA==",
+  "dgSpecHash": "Aud2valxLLJw6DL6qWw86prR53gHhpFmWKNEKo0TN3FQoUdSt7/IbHyAWUJAzLCsLoOLYLIrwOfhCdvjyal+SQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\BookService\\BookService\\BookService.csproj",
+  "projectFilePath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\BookService\\BookService\\BookService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivona\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ivona\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
