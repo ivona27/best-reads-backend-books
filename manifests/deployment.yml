@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "bestreadscluster-6e86"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "bestreadscluster-6e86"
+  template:
+    metadata:
+      labels:
+        app: "bestreadscluster-6e86"
+    spec:
+      containers:
+        - name: "bestreadscluster-6e86"
+          image: "bestreadscontainerregistry.azurecr.io/bestreadscluster"
+          ports:
+          - containerPort: 80
