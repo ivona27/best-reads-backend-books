@@ -1,0 +1,50 @@
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - uses: azure/docker-login@v1
+      with:
+        login-server: bestreadscontainerregistry.azurecr.io
+        username: ${{ secrets.acr_bestreadscontainerregistry_username }}
+        password: ${{ secrets.acr_bestreadscontainerregistry_password }}
+    
+    - name: Build and push image to ACR
+      id: build-image
+      run: |
+        docker build "$GITHUB_WORKSPACE/BookService/BookService" -f  "BookService/BookService/Dockerfile" -t bestreadscontainerregistry.azurecr.io/bestreadscluster:${{ github.sha }} --label dockerfile-path=BookService/BookService/Dockerfile
+        docker push bestreadscontainerregistry.azurecr.io/bestreadscluster:${{ github.sha }}
+    
+    - uses: azure/k8s-set-context@v1
+      with:
+         kubeconfig: ${{ secrets.aks_bestreadscluster_kubeConfig }}
+      id: login
+    
+    - name: Create namespace
+      run: |
+        namespacePresent=`kubectl get namespace | grep bestreadsclusterb2f3 | wc -l`
+        if [ $namespacePresent -eq 0 ]
+        then
+            echo `kubectl create namespace bestreadsclusterb2f3`
+        fi
+
+    - uses: azure/k8s-create-secret@v1
+      with:
+        namespace: bestreadsclusterb2f3
+        container-registry-url: bestreadscontainerregistry.azurecr.io
+        container-registry-username: ${{ secrets.acr_bestreadscontainerregistry_username }}
+        container-registry-password: ${{ secrets.acr_bestreadscontainerregistry_password }}
+        secret-name: bestreadscludockerauth
+       
+    - uses: azure/k8s-deploy@v1.2
+      with:
+        namespace: bestreadsclusterb2f3
+        manifests: |
+          manifests/deployment.yml
+          manifests/service.yml
+        images: |
+          bestreadscontainerregistry.azurecr.io/bestreadscluster:${{ github.sha }}
+        imagepullsecrets: |
+          bestreadscludockerauth
