@@ -15,3 +15,17 @@ spec:
       containers:
         - name: bookservice
           image: lilypocket/bookservice:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: books-clusterip-srv
+spec:
+  type: ClusterIp
+  selector: 
+    app: bookservice
+  ports: 
+  - name: bookservice
+    protocol: TCP
+    port: 80
+    targetPort: 80

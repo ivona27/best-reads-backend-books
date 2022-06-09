@@ -15,3 +15,17 @@ spec:
       containers:
         - name: userservice
           image: lilypocket/userservice:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: users-clusterip-srv
+spec:
+  type: ClusterIp
+  selector: 
+    app: userservice
+  ports: 
+  - name: userservice
+    protocol: TCP
+    port: 80
+    targetPort: 80
