@@ -15,6 +15,8 @@ jobs:
       id: build-image
       run: |
         docker build "$GITHUB_WORKSPACE/BookService/BookService" -f  "BookService/BookService/Dockerfile" -t bestreadscontainerregistry.azurecr.io/bestreadscluster:${{ github.sha }} --label dockerfile-path=BookService/BookService/Dockerfile
+        docker build "$GITHUB_WORKSPACE/UserService/UserService" -f  "UserService/UserService/Dockerfile" -t bestreadscontainerregistry.azurecr.io/bestreadscluster:${{ github.sha }} --label dockerfile-path=UserService/UserService/Dockerfile
+        docker build "$GITHUB_WORKSPACE/AuthService/AuthService" -f  "AuthService/AuthService/Dockerfile" -t bestreadscontainerregistry.azurecr.io/bestreadscluster:${{ github.sha }} --label dockerfile-path=AuthService/AuthService/Dockerfile
         docker push bestreadscontainerregistry.azurecr.io/bestreadscluster:${{ github.sha }}
     
     - uses: azure/k8s-set-context@v1
