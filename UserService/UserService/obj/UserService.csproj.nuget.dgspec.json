@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\USER\\best-reads-backend-user\\UserService\\UserService\\UserService.csproj": {}
+    "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\UserService\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\USER\\best-reads-backend-user\\UserService\\UserService\\UserService.csproj": {
+    "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\UserService\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\USER\\best-reads-backend-user\\UserService\\UserService\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\UserService\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\USER\\best-reads-backend-user\\UserService\\UserService\\UserService.csproj",
+        "projectPath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\UserService\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\ivona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\USER\\best-reads-backend-user\\UserService\\UserService\\obj\\",
+        "outputPath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\UserService\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

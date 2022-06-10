@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TiQd9PaBTdK5KF4EYcrqET/TegVFO5arQs4v27ChLJooZ4xmgqS9zqcGmQ3NL0zjTouwUU4v9ubso8McCrqjJQ==",
+  "dgSpecHash": "VsSzMi9sLsQj0THLvRezYM4rfxusjKzX/fZjQsees1ESWHFO7ap4+UF5ZLeSiRkDmAS5DmjHFBw9bdoij96c/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\USER\\best-reads-backend-user\\UserService\\UserService\\UserService.csproj",
+  "projectFilePath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\UserService\\UserService\\UserService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivona\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\ivona\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
