@@ -14,6 +14,7 @@
           "MySql.Data": "8.0.29",
           "MySql.Data.EntityFramework": "8.0.29",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.1",
+          "RabbitMQ.Client": "6.3.1",
           "Swashbuckle.AspNetCore": "6.3.1"
         },
         "runtime": {
@@ -353,6 +354,18 @@
           }
         }
       },
+      "RabbitMQ.Client/6.3.1": {
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Threading.Channels": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.3.1.0"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -552,6 +565,7 @@
           "Microsoft.NETCore.Platforms": "3.1.0"
         }
       },
+      "System.Threading.Channels/4.7.1": {},
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
@@ -831,6 +845,13 @@
       "path": "pomelo.entityframeworkcore.mysql/6.0.1",
       "hashPath": "pomelo.entityframeworkcore.mysql.6.0.1.nupkg.sha512"
     },
+    "RabbitMQ.Client/6.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l70P6ySsVFS+QCwLldem92GCXYdwvg0X6c+Ty5Yv543eVYVcPtNUhNhmo8FsNVxQZuezMl3rfDJErIvqNJt1CA==",
+      "path": "rabbitmq.client/6.3.1",
+      "hashPath": "rabbitmq.client.6.3.1.nupkg.sha512"
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -991,6 +1012,13 @@
       "sha512": "sha512-6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
       "path": "system.text.encoding.codepages/4.4.0",
       "hashPath": "system.text.encoding.codepages.4.4.0.nupkg.sha512"
+    },
+    "System.Threading.Channels/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6akRtHK/wab3246t4p5v3HQrtQk8LboOt5T4dtpNgsp3zvDeM4/Gx8V12t0h+c/W9/enUrilk8n6EQqdQorZAA==",
+      "path": "system.threading.channels/4.7.1",
+      "hashPath": "system.threading.channels.4.7.1.nupkg.sha512"
     },
     "System.Windows.Extensions/4.7.0": {
       "type": "package",

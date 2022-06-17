@@ -15,3 +15,17 @@ spec:
       containers:
         - name: authservice
           image: lilypocket/authservice:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-clusterip-srv
+spec:
+  type: ClusterIp
+  selector: 
+    app: authservice
+  ports: 
+  - name: authservice
+    protocol: TCP
+    port: 80
+    targetPort: 80

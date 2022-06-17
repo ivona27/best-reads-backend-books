@@ -202,3 +202,4 @@ C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend
 C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend-books\UserService\UserService\obj\Debug\net6.0\UserService.pdb
 C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend-books\UserService\UserService\obj\Debug\net6.0\UserService.genruntimeconfig.cache
 C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend-books\UserService\UserService\obj\Debug\net6.0\ref\UserService.dll
+C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend-books\UserService\UserService\bin\Debug\net6.0\RabbitMQ.Client.dll

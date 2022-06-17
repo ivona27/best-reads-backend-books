@@ -72,3 +72,4 @@ C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend
 C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend-books\BookService\BookService\obj\Debug\net6.0\BookService.pdb
 C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend-books\BookService\BookService\obj\Debug\net6.0\BookService.genruntimeconfig.cache
 C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend-books\BookService\BookService\obj\Debug\net6.0\ref\BookService.dll
+C:\Users\ivona\Desktop\Fontys\SOFTWARE6\INDIVIDUAL\CODING\git\best-reads-backend-books\BookService\BookService\bin\Debug\net6.0\RabbitMQ.Client.dll
