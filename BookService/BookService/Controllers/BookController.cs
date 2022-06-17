@@ -14,13 +14,20 @@ namespace BookService.Controllers
         {
             _context = context;
         }
-
+        /// <summary>
+        /// Gets all books from user's library
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<List<BookModel>>> GetBooks()
         {
             return Ok(await _context.BookModels.ToListAsync());
         }
-
+        /// <summary>
+        /// gets a specific book from user's library
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<BookModel>> GetBookById(int id)
         {
@@ -29,11 +36,11 @@ namespace BookService.Controllers
                 return BadRequest("Book not found.");
             return Ok(book);
         }
-
-        //GetBooksByUserId
-
-        //GetBookByISBN
-
+        /// <summary>
+        /// deletes a specific book from user's library
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult<List<BookModel>>> DeleteBookById(int id)
         {

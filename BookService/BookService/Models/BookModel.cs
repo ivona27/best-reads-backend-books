@@ -2,6 +2,9 @@
 {
     public class BookModel
     {
+        /// <summary>
+        /// book fields
+        /// </summary>
         public int id { get; set; }
         public int user_id { get; set; }
         public string? title { get; set; }
