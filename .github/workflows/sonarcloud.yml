@@ -45,4 +45,8 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"ivona27_best-reads-backend-books" /o:"ivona27" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet build .\BookService\BookService\BookService.csproj 
           docker build "$GITHUB_WORKSPACE/BookService/BookService" -f "BookService/BookService/Dockerfile"
+          dotnet build .\UserService\UserService\UserService.csproj 
+          docker build "$GITHUB_WORKSPACE/UserService/UserService" -f "UserService/UserService/Dockerfile"
+          dotnet build .\AuthService\AuthService\AuthService.csproj 
+          docker build "$GITHUB_WORKSPACE/AuthService/AuthService" -f "AuthService/AuthService/Dockerfile"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
