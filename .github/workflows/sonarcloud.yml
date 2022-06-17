@@ -43,8 +43,6 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"ivona27_best-reads-backend-books" /o:"ivona27" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build
+          dotnet build 
           .\BookService\BookService\BookService.csproj
-          docker build
-          "$GITHUB_WORKSPACE/BookService/BookService" -f "BookService/BookService/Dockerfile"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
