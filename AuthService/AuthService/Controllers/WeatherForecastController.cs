@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AuthService.Controllers
 {
+    /// <summary>
+    /// for authorization purposes
+    /// </summary>
     [Authorize]
     [ApiController]
     [Route("[controller]")]
