@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aHgKLBTx4BMDoSH2bOPxyLkYwaI0OfNCjANyetryeqd5rZVOhBYQbDoF7RUua1QZ/8FyFG3jL0ENA7uvoB22HA==",
+  "dgSpecHash": "QS3lLsmKpgx4SuvAoifrr95bU3ox3C0ygQkJ4GnR+ubYSj+l1eT2Zy98tVSbYBXlkuBi2u4qdl/3qzP9stJBbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-auth\\AuthService\\AuthService\\AuthService.csproj",
+  "projectFilePath": "C:\\Users\\ivona\\Desktop\\Fontys\\SOFTWARE6\\INDIVIDUAL\\CODING\\git\\best-reads-backend-books\\AuthService\\AuthService\\AuthService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivona\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ivona\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.5\\microsoft.aspnetcore.authentication.jwtbearer.6.0.5.nupkg.sha512",

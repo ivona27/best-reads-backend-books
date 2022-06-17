@@ -13,13 +13,20 @@ namespace UserService.Controllers
         {
             _context = context;
         }
-
+        /// <summary>
+        /// get all users
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<List<UserModel>>> GetUsers()
         {
             return Ok(await _context.UserModels.ToListAsync());
         }
-
+        /// <summary>
+        /// get a specific user by their id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<UserModel>> GetUser(int id)
         {
@@ -36,7 +43,11 @@ namespace UserService.Controllers
             await _context.SaveChangesAsync();
             return Ok(await _context.UserModels.ToListAsync());
         }
-
+        /// <summary>
+        /// update the user, can update any field
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<ActionResult<UserModel>> UpdateUser(UserModel request)
         {
@@ -64,7 +75,11 @@ namespace UserService.Controllers
 
             return Ok(await _context.UserModels.Where(x => x.id == request.id).FirstOrDefaultAsync());
         }
-
+        /// <summary>
+        /// delete the user by their id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult<List<UserModel>>> DeleteUser(int id)
         {

@@ -27,7 +27,11 @@ namespace AuthService.Controllers
             _roleManager = roleManager;
             _configuration = configuration;
         }
-
+        /// <summary>
+        /// Creating a new user
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
@@ -80,7 +84,11 @@ namespace AuthService.Controllers
             }
             return Ok(new Response { Status = "Success", Message = "User created successfully!" });
         }
-
+        /// <summary>
+        /// Login if the user exists
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
@@ -119,7 +127,11 @@ namespace AuthService.Controllers
             }
             return Unauthorized();
         }
-
+        /// <summary>
+        /// refresh the access token once it expires
+        /// </summary>
+        /// <param name="tokenModel"></param>
+        /// <returns></returns>
         [HttpPost("refresh-token")]
         public async Task<IActionResult> RefreshToken(TokenModel tokenModel)
         {
@@ -162,7 +174,11 @@ namespace AuthService.Controllers
                 refreshToken = newRefreshToken
             });
         }
-
+        /// <summary>
+        /// if authorized with the access token, revoke the refresh token
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
         [Authorize]
         [HttpPost("revoke/{username}")]
         public async Task<IActionResult> Revoke(string username)
@@ -175,7 +191,10 @@ namespace AuthService.Controllers
 
             return Ok();
         }
-
+        /// <summary>
+        /// if authorized with the access token, revoke all refresh tokens
+        /// </summary>
+        /// <returns></returns>
         [Authorize]
         [HttpPost("revoke-all")]
         public async Task<IActionResult> RevokeAll()
@@ -189,7 +208,11 @@ namespace AuthService.Controllers
 
             return NoContent();
         }
-
+        /// <summary>
+        /// generate the access token
+        /// </summary>
+        /// <param name="authClaims"></param>
+        /// <returns></returns>
         private JwtSecurityToken CreateToken(List<Claim> authClaims)
         {
             var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
@@ -205,7 +228,10 @@ namespace AuthService.Controllers
 
             return token;
         }
-
+        /// <summary>
+        /// generate the refresh token
+        /// </summary>
+        /// <returns></returns>
         private static string GenerateRefreshToken()
         {
             var randomNumber = new byte[64];
@@ -213,7 +239,12 @@ namespace AuthService.Controllers
             rng.GetBytes(randomNumber);
             return Convert.ToBase64String(randomNumber);
         }
-
+        /// <summary>
+        /// validate the token
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
+        /// <exception cref="SecurityTokenException"></exception>
         private ClaimsPrincipal? GetPrincipalFromExpiredToken(string? token)
         {
             var tokenValidationParameters = new TokenValidationParameters

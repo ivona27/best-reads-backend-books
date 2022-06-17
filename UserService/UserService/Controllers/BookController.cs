@@ -15,7 +15,11 @@ namespace UserService.Controllers
         {
             _context = context;
         }
-
+        /// <summary>
+        /// search for a book in Google Books API by theit id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("/volumes/volumeId")]
         public async Task<IActionResult> GetBookById(string id)
         {
@@ -26,7 +30,11 @@ namespace UserService.Controllers
             var result = service.Volumes.Get(id).Execute();
             return Ok(result);
         }
-
+        /// <summary>
+        /// search for a book in Google Books API by a search word
+        /// </summary>
+        /// <param name="q"></param>
+        /// <returns></returns>
         [HttpGet("/volumes")]
         public async Task<IActionResult> SearchBooks(string q)
         {
@@ -37,13 +45,5 @@ namespace UserService.Controllers
             var result = service.Volumes.List(q).Execute().Items.Take(5);
             return Ok(result);
         }
-
-        //[HttpPost]
-        //public async Task<ActionResult<BookModel>> AddBook(BookModel book)
-        //{
-        //    _context.BookModels.Add(book);
-        //    await _context.SaveChangesAsync();
-        //    return Ok(await _context.UserModels.ToListAsync());
-        //}
     }
 }

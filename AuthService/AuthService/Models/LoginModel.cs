@@ -4,6 +4,9 @@ namespace AuthService.Models
 {
     public class LoginModel
     {
+        /// <summary>
+        /// login fields
+        /// </summary>
         [Required(ErrorMessage = "User Name is required")]
         public string? Username { get; set; }
 

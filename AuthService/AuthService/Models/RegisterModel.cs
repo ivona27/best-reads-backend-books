@@ -4,6 +4,9 @@ namespace AuthService.Models
 {
     public class RegisterModel
     {
+        /// <summary>
+        /// registering fields
+        /// </summary>
         [Required(ErrorMessage = "User Name is required")]
         public string? Username { get; set; }
 
